@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<meta name="ad.size" content="width=336, height=280"/>
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+
+			<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		
+			<script src="https://tpc.googlesyndication.com/pagead/gadgets/html5/api/exitapi.js"></script>
+			
+			<script type="text/javascript">
+				var clickTag = "#";
+			</script>
+			
+			<style type="text/css" media="screen">
+				#cta{
+					width:336px;
+					height:280px;
+					overflow:hidden;
+					position:relative; 
+					background-color:#ccc;
+					cursor:pointer;
+				}
+
+				.cont{
+					text-align:center;
+				}
+				
+				.background{
+					background-color:#ccc;
+				}
+
+				.img{
+					position:relative;
+					padding-top:46px;
+				}
+
+				.txt{
+					color: #ffffff;
+					font-family: 'Roboto', sans-serif;
+					font-size: 98%;
+					position: absolute;
+					width: 300px;
+					top: 12%;
+					z-index: 1;
+					background-color: black;
+					padding: 11px 19px 8px 19px;
+					margin-top: 8px;
+					margin-bottom: 0px;
+					border-top-width: 9px;
+					text-align: center;
+				}
+
+				.logo {
+					width:120px;
+					position:relative;
+					padding-left: 15px;
+					padding-top: 8px;
+				}
+
+				.btn{
+					margin: 0;
+					position: absolute;
+					top: 79%;
+					left:58%;
+					
+					
+					-moz-animation-name: stretchBtn;
+				  -moz-animation-iteration-count: 3;
+				  -moz-animation-timing-function: ease-out;
+				  -moz-animation-duration: 0.5s;
+
+				  -webkit-animation-name: stretchBtn;
+				  -webkit-animation-iteration-count: 3;
+				  -webkit-animation-timing-function: ease-out;
+				  -webkit-animation-duration: 0.5s;
+
+				  animation-name: stretchBtn;
+				  animation-iteration-count: 2;
+				  animation-timing-function: ease-out;
+				  animation-duration: 0.3s;
+				}
+
+				@-moz-keyframes stretchBtn {
+					0% {
+						-moz-transform: scale(0.8);
+					}
+					100% {
+						-moz-transform: scale(1);
+					}
+				}
+				@-webkit-keyframes stretchBtn {
+					0% {
+						-webkit-transform: scale(0.8);
+					}
+					100% {
+						-webkit-transform: scale(1);
+					}
+				}
+				@keyframes stretchBtn {
+					0% {
+						transform: scale(0.8);
+					}
+					100% {
+						transform: scale(1);
+					}
+				}
+			</style>
+			
+			<script type="text/javascript" charset="wtf-8">
+				window.onload = function (event){
+				var cta = document.getElementById("cta");
+				cta.addEventListener("click", ExitApi.exit);
+				}
+			</script>
+	</head>
+	<body>
+			<div id="cta">
+				<a href="javascript:window.open(window.clickTag)">
+					<img class="logo" src="logo.png" alt="Logo"/>
+					
+					<div class="cont">
+							<p class="txt">Descubre nuestras nuevas tarjetas</p>
+						<img class="img" src="img336.jpg" width="336px" alt="Nuevas tarjetas"/>
+						<img class="btn" src="boton.png" width= "120px" alt="Contactar">
+					</div>
+				</a>
+			</div>
+
+	</body>
+</html>
